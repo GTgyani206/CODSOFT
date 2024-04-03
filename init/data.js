@@ -150,3 +150,5 @@ const sampleListings = [
     price: 59.99,
   },
 ];
+
+module.exports = { data: sampleListings };
