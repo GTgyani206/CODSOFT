@@ -9,10 +9,11 @@ const flash = require("connect-flash");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user");
+const path = require("path");
 
-const listingsRoutes = require("./routes/listings");
-const reviewsRoutes = require("./routes/reviews");
-const userRoutes = require("./routes/users");
+const listingRouter = require("./routes/listing");
+const reviewRouter = require("./routes/review");
+const userRouter = require("./routes/user");
 
 const Mongo_URL = "mongodb://127.0.0.1:27017/codsoft";
 
@@ -31,7 +32,7 @@ app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "public")));
 
-const sessionConfig = {
+const sessionOptions = {
   secret: "supersecret",
   resave: false,
   saveUninitialized: true,
