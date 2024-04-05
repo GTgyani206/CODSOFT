@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -11,9 +15,9 @@ const LocalStrategy = require("passport-local");
 const User = require("./models/user");
 const path = require("path");
 
-const listingRouter = require("./routes/listing");
-const reviewRouter = require("./routes/review");
-const userRouter = require("./routes/user");
+const listingRouter = require("./routes/listing.js");
+const reviewRouter = require("./routes/review.js");
+const userRouter = require("./routes/user.js");
 
 const Mongo_URL = "mongodb://127.0.0.1:27017/codsoft";
 
