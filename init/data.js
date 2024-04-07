@@ -5,7 +5,7 @@ const sampleListings = [
       "Step into spring with this elegant floral dress. Featuring a flattering fit and vibrant floral print, it's perfect for special occasions.",
     image: {
       filename: "floral-dress",
-      url: "https://example.com/images/floral-dress.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 49.99,
   },
@@ -15,7 +15,7 @@ const sampleListings = [
       "Keep your essentials organized with this sleek leather wallet. With multiple card slots and a bill compartment, it's both practical and stylish.",
     image: {
       filename: "leather-wallet",
-      url: "https://example.com/images/leather-wallet.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 39.99,
   },
@@ -25,7 +25,7 @@ const sampleListings = [
       "Achieve your fitness goals in style with these lightweight running shoes. Designed for comfort and performance, they'll keep you going mile after mile.",
     image: {
       filename: "running-shoes",
-      url: "https://example.com/images/running-shoes.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 59.99,
   },
@@ -35,7 +35,7 @@ const sampleListings = [
       "Update your denim collection with these modern slim fit jeans. Made from stretchy denim for a comfortable fit, they're a versatile addition to any wardrobe.",
     image: {
       filename: "slim-fit-jeans",
-      url: "https://example.com/images/slim-fit-jeans.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 34.99,
   },
@@ -45,7 +45,7 @@ const sampleListings = [
       "Carry your essentials in style with this chic tote bag. With a spacious interior and durable construction, it's perfect for work or weekend outings.",
     image: {
       filename: "tote-bag",
-      url: "https://example.com/images/tote-bag.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 44.99,
   },
@@ -55,7 +55,7 @@ const sampleListings = [
       "Stay cool and stylish in this classic men's polo shirt. Made from breathable fabric, it's ideal for casual wear or outdoor activities.",
     image: {
       filename: "polo-shirt",
-      url: "https://example.com/images/polo-shirt.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 24.99,
   },
@@ -65,7 +65,7 @@ const sampleListings = [
       "Complete your look with these trendy sunglasses. Featuring UV protection and a stylish design, they're a must-have accessory for sunny days.",
     image: {
       filename: "sunglasses",
-      url: "https://example.com/images/sunglasses.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 19.99,
   },
@@ -75,7 +75,7 @@ const sampleListings = [
       "Add a sporty touch to your outfits with these comfortable casual sneakers. With a modern design and cushioned sole, they're perfect for everyday wear.",
     image: {
       filename: "casual-sneakers",
-      url: "https://example.com/images/casual-sneakers.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 49.99,
   },
@@ -85,7 +85,7 @@ const sampleListings = [
       "Stay organized on the go with this versatile crossbody bag. Featuring multiple compartments and an adjustable strap, it's both stylish and functional.",
     image: {
       filename: "crossbody-bag",
-      url: "https://example.com/images/crossbody-bag.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 39.99,
   },
@@ -95,7 +95,7 @@ const sampleListings = [
       "Elevate your formal attire with these sleek dress shoes. Crafted from premium leather, they're perfect for weddings, parties, or business meetings.",
     image: {
       filename: "dress-shoes",
-      url: "https://example.com/images/dress-shoes.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 69.99,
   },
@@ -105,7 +105,7 @@ const sampleListings = [
       "Stay stylish and comfortable with this classic denim jacket. Featuring a timeless design and durable denim fabric, it's perfect for layering.",
     image: {
       filename: "denim-jacket",
-      url: "https://example.com/images/denim-jacket.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 54.99,
   },
@@ -115,7 +115,7 @@ const sampleListings = [
       "Carry your essentials in style with this spacious backpack. With multiple compartments and padded straps, it's perfect for work, school, or travel.",
     image: {
       filename: "backpack",
-      url: "https://example.com/images/backpack.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 49.99,
   },
@@ -125,7 +125,7 @@ const sampleListings = [
       "Stay comfortable during workouts with these stretchy workout leggings. Featuring moisture-wicking fabric and a high waistband, they provide support and style.",
     image: {
       filename: "workout-leggings",
-      url: "https://example.com/images/workout-leggings.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 29.99,
   },
@@ -135,7 +135,7 @@ const sampleListings = [
       "Stay cozy and warm with this soft hooded sweatshirt. Made from fleece fabric with a kangaroo pocket, it's perfect for chilly days.",
     image: {
       filename: "hooded-sweatshirt",
-      url: "https://example.com/images/hooded-sweatshirt.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 39.99,
   },
@@ -145,7 +145,7 @@ const sampleListings = [
       "Step out in style with these trendy ankle boots. Featuring a block heel and faux leather material, they're perfect for day-to-night looks.",
     image: {
       filename: "ankle-boots",
-      url: "https://example.com/images/ankle-boots.jpg",
+      url: "https://lh3.googleusercontent.com/gg/ANIJZFFhu5BN2gTnmK5b1CnrBYehPfSBrn884UpPbiOzFpLrM0BoDgB4rWjetmesUgCBim97MgdQP9ZKM2-IJ9TjbxiR19ql7_sM0Vh_M890tc-ThEcJgraZXy5RBXN60lihUacN3uqfajdsWYgCY_XGuJtXZP-vQw3ws8TlpqBFMTIEH1SsJ-ofP2fSfnQS7N8mI49UnAKMICvzfGSwm0uChX4Eo05qDiONkzF8FQLKKuvuoxafm0Wr6E7xTuqt9ijRdsRp_THeT8bOj2_aU3OtudTIazUPi2t1oR-xlo80b2a7pttAoB6vr_IwtMChLZ9Cc5nSCF3TpiIpFAO21nFYOmSz",
     },
     price: 59.99,
   },
