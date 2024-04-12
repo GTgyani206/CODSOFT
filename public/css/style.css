@@ -15,27 +15,40 @@ body::-webkit-scrollbar {
 }
 
 /* Navbar */
-
-.navbar {
-  height: 5rem;
-  background-color: #fff;
+.logo {
+  width: 100px;
+  height: 100px;
+}
+div > img {
+  width: 100%;
+}
+.top {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  justify-items: center;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-opt {
+  font-size: 700 !important;
 }
 
-.navbar-brand > img {
-  width: 2rem;
+/* Landing */
+
+.carousel-item {
+  height: 85vh;
+  margin-bottom: 3rem;
 }
 
-.nav-link {
-  color: #222222 !important;
+.carousel-item img {
+  position: relative;
+  left: 15%;
+  width: 70%;
+  height: 97%;
 }
-
-/* .navbar > userNsupport {
-} */
 
 /* Cards */
 .listing-card {
