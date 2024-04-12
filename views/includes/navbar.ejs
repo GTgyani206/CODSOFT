@@ -22,57 +22,59 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="fa-solid fa-user fa-lg"></i>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><i class="fa-solid fa-cart-shopping fa-lg"></i> Cart</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><i class="fa-solid fa-heart"></i> Wishlist</a
-                >
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><i class="fa-solid fa-address-book"></i> Your Profile
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><i class="fa-solid fa-box"></i> Your Orders</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#"
-              ><i class="fa-solid fa-headset fa-lg"></i> Support</a
-            >
-          </li>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div class="userNsupport">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-user fa-lg"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-cart-shopping fa-lg"></i> Cart</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-heart"></i> Wishlist</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-address-book"></i> Your Profile
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-solid fa-box"></i> Your Orders</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                ><i class="fa-solid fa-headset fa-lg"></i> Support</a
+              >
+            </li>
+          </div>
         </ul>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
       </div>
     </div>
   </nav>

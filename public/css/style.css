@@ -19,6 +19,11 @@ body::-webkit-scrollbar {
 .navbar {
   height: 5rem;
   background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
 }
 
 .navbar-brand > img {
@@ -28,6 +33,9 @@ body::-webkit-scrollbar {
 .nav-link {
   color: #222222 !important;
 }
+
+/* .navbar > userNsupport {
+} */
 
 /* Cards */
 .listing-card {
