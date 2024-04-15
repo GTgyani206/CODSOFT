@@ -97,6 +97,32 @@ div > img {
   background-color: #fff;
 }
 
+/* tabbed nav */
+.tabbedNav {
+  display: none !important;
+}
+.active-card {
+  display: block !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  border: 1.5px solid black !important;
+  border-radius: 1.5rem !important;
+  margin-right: 2rem !important;
+  margin-top: 1rem !important;
+  height: 25rem !important;
+  width: 80rem;
+  scrollbar-color: transparent transparent;
+}
+.active-btn {
+  border-radius: 1rem !important;
+  background-color: #966919 !important;
+  color: white !important;
+  transition: 1000ms !important;
+}
+.opt-btn {
+  border: none !important;
+}
+
 /* Footer */
 
 .f-info-links a {

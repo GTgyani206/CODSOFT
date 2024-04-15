@@ -3,11 +3,109 @@
     <h2>New Arrivals</h2>
   </div>
   <div class="opt">
-    <button class="btn opt-btn" style="margin-left: 0%">Ladies</button
-    ><button class="btn opt-btn">Men</button
-    ><button class="btn opt-btn">Home</button
-    ><button class="btn opt-btn">Kids</button
+    <button class="btn Ladies-opt-btn" onclick="showCard('Ladies')">
+      Ladies</button
+    ><button class="btn Men-opt-btn" onclick="showCard('Men')">Men</button
+    ><button class="btn Home-opt-btn" onclick="showCard('Home')">Home</button
+    ><button class="btn Kids-opt-btn" onclick="showCard('Kids')">Kids</button
     ><button class="btn opt-btn">More</button>
   </div>
-  <div></div>
+  <div id="Ladies" class="tabbedNav">
+    <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-4">
+      <% for(let listing of allListings) { if (listing.category == "Ladies") {%>
+      <a class="listing-links" href="/listings/<%= listing._id %>">
+        <div class="card col listing-card">
+          <img
+            src="<%= listing.image.url %>"
+            class="card-img-top"
+            alt="listing-image"
+            style="height: 20rem"
+          />
+          <div class="card-img-overlay"></div>
+          <div class="card-body">
+            <p class="card-text">
+              <b> <%= listing.title %> </b>
+              <br />
+              &#8377; <%= listing.price.toLocaleString("en-IN") %>
+            </p>
+          </div>
+        </div>
+      </a>
+      <% } }%>
+    </div>
+  </div>
+
+  <div id="Men" class="tabbedNav">
+    <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-4">
+      <% for(let listing of allListings) { if (listing.category == "Men") {%>
+      <a class="listing-links" href="/listings/<%= listing._id %>">
+        <div class="card col listing-card">
+          <img
+            src="<%= listing.image.url %>"
+            class="card-img-top"
+            alt="listing-image"
+            style="height: 20rem"
+          />
+          <div class="card-img-overlay"></div>
+          <div class="card-body">
+            <p class="card-text">
+              <b> <%= listing.title %> </b>
+              <br />
+              &#8377; <%= listing.price.toLocaleString("en-IN") %>
+            </p>
+          </div>
+        </div>
+      </a>
+      <% } }%>
+    </div>
+  </div>
+
+  <div id="Kids" class="tabbedNav">
+    <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-4">
+      <% for(let listing of allListings) { if (listing.category == "Kid") {%>
+      <a class="listing-links" href="/listings/<%= listing._id %>">
+        <div class="card col listing-card">
+          <img
+            src="<%= listing.image.url %>"
+            class="card-img-top"
+            alt="listing-image"
+            style="height: 20rem"
+          />
+          <div class="card-img-overlay"></div>
+          <div class="card-body">
+            <p class="card-text">
+              <b> <%= listing.title %> </b>
+              <br />
+              &#8377; <%= listing.price.toLocaleString("en-IN") %>
+            </p>
+          </div>
+        </div>
+      </a>
+      <% } }%>
+    </div>
+  </div>
+  <div id="Home" class="tabbedNav">
+    <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-4">
+      <% for(let listing of allListings) { if (listing.category == "Home") {%>
+      <a class="listing-links" href="/listings/<%= listing._id %>">
+        <div class="card col listing-card">
+          <img
+            src="<%= listing.image.url %>"
+            class="card-img-top"
+            alt="listing-image"
+            style="height: 20rem"
+          />
+          <div class="card-img-overlay"></div>
+          <div class="card-body">
+            <p class="card-text">
+              <b> <%= listing.title %> </b>
+              <br />
+              &#8377; <%= listing.price.toLocaleString("en-IN") %>
+            </p>
+          </div>
+        </div>
+      </a>
+      <% } }%>
+    </div>
+  </div>
 </div>
