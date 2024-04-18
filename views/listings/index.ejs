@@ -1,25 +1,28 @@
 <% layout("/layouts/boilerplate") -%> <% layout("/layouts/boilerplate") -%> <%-
 include("../includes/carousal.ejs") %> <%- include("../includes/filter.ejs") %>
 
-<div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 content">
-  <% for(let listing of allListings) { %> <% if(listing.category == "") { %>
-  <a class="listing-links" href="/listings/<%= listing._id %>">
-    <div class="card col listing-card">
-      <img
-        src="<%= listing.image.url %>"
-        class="card-img-top"
-        alt="listing-image"
-        style="height: 20rem"
-      />
-      <div class="card-img-overlay"></div>
-      <div class="card-body">
-        <p class="card-text">
-          <b> <%= listing.title %> </b>
-          <br />
-          &#8377; <%= listing.price.toLocaleString("en-IN") %>
-        </p>
+<div class="index">
+  <div><h2>Suggested</h2></div>
+  <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 content ml-3">
+    <% for(let listing of allListings) { %> <% if(listing.category == "") { %>
+    <a class="listing-links" href="/listings/<%= listing._id %>">
+      <div class="card col listing-card">
+        <img
+          src="<%= listing.image.url %>"
+          class="card-img-top"
+          alt="listing-image"
+          style="height: 20rem"
+        />
+        <div class="card-img-overlay"></div>
+        <div class="card-body">
+          <p class="card-text">
+            <b> <%= listing.title %> </b>
+            <br />
+            &#8377; <%= listing.price.toLocaleString("en-IN") %>
+          </p>
+        </div>
       </div>
-    </div>
-  </a>
-  <% } } %>
+    </a>
+    <% } } %>
+  </div>
 </div>

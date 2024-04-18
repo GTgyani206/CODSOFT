@@ -10,7 +10,7 @@
     ><button class="btn Kids-opt-btn" onclick="showCard('Kids')">Kids</button
     ><button class="btn opt-btn">More</button>
   </div>
-  <div id="Ladies" class="tabbedNav">
+  <div id="Ladies" class="tabbedNav active-card">
     <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-4">
       <% for(let listing of allListings) { if (listing.category == "Ladies") {%>
       <a class="listing-links" href="/listings/<%= listing._id %>">

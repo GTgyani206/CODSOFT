@@ -60,6 +60,14 @@ div > img {
   border-radius: 1.5rem !important;
 }
 
+/* index */
+.index {
+  margin-top: 2rem;
+  margin-left: 5rem !important;
+}
+.index div > h2 {
+  margin-left: 7rem !important;
+}
 /* Cards */
 .listing-card {
   border: none !important;
