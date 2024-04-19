@@ -68,6 +68,11 @@ div > img {
 .index div > h2 {
   margin-left: 7rem !important;
 }
+
+.login {
+  height: 100vh !important;
+}
+
 /* Cards */
 .listing-card {
   border: none !important;
