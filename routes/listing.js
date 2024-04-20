@@ -9,4 +9,9 @@ router
   //index route
   .get(listingController.index);
 
+router
+  .route("/:id")
+  //show route
+  .get(listingController.showListing);
+
 module.exports = router;
