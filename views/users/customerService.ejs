@@ -2,23 +2,10 @@
 <a href="/listings" class="btn btn-outline-dark btn-sm">Back to Home</a>
 <div class="row m-5">
   <div class="mt-5">
-    <center><h1 class="mb-5">SignUp on Urban Trendz</h1></center>
+    <center><h1 class="mb-5">How can we help you?</h1></center>
 
     <div class="col-6 offset-3">
-      <form action="/signup" method="POST" class="needs-validation" novalidate>
-        <!-- username -->
-        <div class="mb-3">
-          <label for="username" class="form-label">Username</label>
-          <input
-            name="username"
-            id="username"
-            type="text"
-            class="form-control"
-            required
-          />
-          <div class="invalid-feedback">Please enter the Username</div>
-        </div>
-
+      <form action="/" method="POST" class="needs-validation" novalidate>
         <!-- email -->
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
@@ -29,6 +16,30 @@
             class="form-control"
             required
           />
+
+          <!-- username -->
+          <div class="mb-3">
+            <label for="username" class="form-label">Name</label>
+            <input
+              name="name"
+              id="name"
+              type="text"
+              class="form-control"
+              required
+            />
+
+            <div class="mb-3">
+              <label for="message" class="form-label">message</label>
+              <input
+                type="text"
+                name="message"
+                id="meassage"
+                class="form-control"
+              />
+            </div>
+            <div class="invalid-feedback">Please enter the Username</div>
+          </div>
+
           <div class="invalid-feedback">Please enter the Email</div>
         </div>
 
@@ -45,7 +56,7 @@
           <div class="invalid-feedback">Please enter the Password</div>
         </div>
 
-        <button class="btn btn-outline-dark">SignUp</button>
+        <button class="btn btn-outline-dark">Submit</button>
       </form>
     </div>
   </div>

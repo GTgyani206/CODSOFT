@@ -24,6 +24,9 @@ router
     userController.login
   );
 
+// Customer Service
+router.get("/customerService", userController.rendercustomerService);
+
 // Logout
 router.get("/logout", userController.logout);
 

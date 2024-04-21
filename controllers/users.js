@@ -40,3 +40,7 @@ module.exports.logout = (req, res, next) => {
     res.redirect("/listings");
   });
 };
+
+module.exports.rendercustomerService = async (req, res) => {
+  res.render("users/customerService.ejs");
+};
