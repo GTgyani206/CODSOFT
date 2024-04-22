@@ -2,7 +2,7 @@
 <%- include("../includes/filter.ejs") %>
 
 <div class="index">
-  <div><h2>Suggested</h2></div>
+  <div><h2>Suggested for You</h2></div>
   <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 content ml-3">
     <% for(let listing of allListings) { %> <% if(listing.category == "") { %>
     <a class="listing-links" href="/listings/<%= listing._id %>">
