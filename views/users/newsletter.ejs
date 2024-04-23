@@ -1,0 +1,37 @@
+<% layout("/layouts/boilerplate") -%>
+<a href="/listings" class="btn btn-outline-dark btn-sm">Back to Home</a>
+<div class="row m-5">
+  <div class="mt-5">
+    <center><h1 class="mb-5">Want to sign up to our newsletter</h1></center>
+
+    <div class="col-6 offset-3">
+      <form action="/" method="POST" class="needs-validation" novalidate>
+        <!-- email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <!-- username -->
+        <div class="mb-3">
+          <label for="username" class="form-label">Name</label>
+          <input
+            name="name"
+            id="name"
+            type="text"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <button class="btn btn-outline-dark">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

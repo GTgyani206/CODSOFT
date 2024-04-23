@@ -44,3 +44,7 @@ module.exports.logout = (req, res, next) => {
 module.exports.rendercustomerService = async (req, res) => {
   res.render("users/customerService.ejs");
 };
+
+module.exports.rendernewsletter = async (req, res) => {
+  res.render("users/newsletter.ejs");
+};
