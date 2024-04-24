@@ -116,6 +116,16 @@ div > img {
   width: 120%;
 }
 
+.dropdown-menu {
+  border: none !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  border: none !important;
+  top: 100%;
+  display: inline-block;
+}
+
 /* Landing */
 
 .carousel-item {
