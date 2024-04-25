@@ -12,3 +12,8 @@ module.exports.showListing = async (req, res) => {
 
   res.render("listings/show.ejs", { listing });
 };
+
+// favorite route
+module.exports.favourite = async (req, res) => {
+  res.render("listings/favourite.ejs");
+};

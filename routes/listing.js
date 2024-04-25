@@ -8,10 +8,11 @@ router
   .route("/")
   //index route
   .get(listingController.index);
-
 router
   .route("/:id")
   //show route
   .get(listingController.showListing);
+
+router.get("/favourite", listingController.favourite);
 
 module.exports = router;
