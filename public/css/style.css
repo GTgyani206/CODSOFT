@@ -31,7 +31,6 @@ div > img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 60px;
 }
 .nav-opt {
   font-size: 700 !important;
@@ -46,9 +45,10 @@ div > img {
 
 .navbar {
   width: 100%;
-  height: 100px;
+  height: 70px;
   display: flex;
   align-items: center;
+  padding-top: 0%;
   background-color: #fff;
 }
 
@@ -64,7 +64,7 @@ div > img {
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-  padding: 0 100px;
+  padding: 0 350px;
 }
 
 .menu li {
@@ -90,6 +90,7 @@ div > img {
   position: absolute;
   display: block;
   border: 0px solid transparent;
+  border-radius: 50%;
 }
 
 .menu li:after {
@@ -98,6 +99,7 @@ div > img {
   border-top: 2px solid #966919;
   border-bottom: 2px solid #966919;
   transition: all 0.3s ease;
+  border-radius: 50%;
 }
 
 .menu li:before {
@@ -106,6 +108,7 @@ div > img {
   border-left: 2px solid #966919;
   border-right: 2px solid #966919;
   transition: all 0.5s ease;
+  border-radius: 50%;
 }
 
 .menu li:hover::before {
@@ -193,12 +196,21 @@ div > img {
 
 /* Card-effect */
 .card-img-overlay {
+  display: flex;
   opacity: 0;
+  .card-img-overlay-heart {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+  }
+}
+.card-img-overlay:hover {
+  opacity: 1;
+  background-color: #ffffff40;
 }
 
-.card-img-overlay:hover {
-  opacity: 0.2;
-  background-color: #fff;
+.card-img-overlay-heart > i:hover {
+  color: red;
 }
 
 /* tabbed nav */

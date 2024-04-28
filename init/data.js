@@ -2,6 +2,8 @@ const sampleListings = [
   {
     title: "Women's Floral Dress",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Step into spring with this elegant floral dress. Featuring a flattering fit and vibrant floral print, it's perfect for special occasions.",
     image: {
@@ -13,6 +15,8 @@ const sampleListings = [
   {
     title: "Men's Leather Wallet",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Keep your essentials organized with this sleek leather wallet. With multiple card slots and a bill compartment, it's both practical and stylish.",
     image: {
@@ -24,6 +28,8 @@ const sampleListings = [
   {
     title: "Women's Running Shoes",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Achieve your fitness goals in style with these lightweight running shoes. Designed for comfort and performance, they'll keep you going mile after mile.",
     image: {
@@ -35,6 +41,8 @@ const sampleListings = [
   {
     title: "Men's Slim Fit Jeans",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Update your denim collection with these modern slim fit jeans. Made from stretchy denim for a comfortable fit, they're a versatile addition to any wardrobe.",
     image: {
@@ -46,6 +54,8 @@ const sampleListings = [
   {
     title: "Women's Tote Bag",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Carry your essentials in style with this chic tote bag. With a spacious interior and durable construction, it's perfect for work or weekend outings.",
     image: {
@@ -57,6 +67,8 @@ const sampleListings = [
   {
     title: "Men's Polo Shirt",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Stay cool and stylish in this classic men's polo shirt. Made from breathable fabric, it's ideal for casual wear or outdoor activities.",
     image: {
@@ -68,6 +80,8 @@ const sampleListings = [
   {
     title: "Women's Sunglasses",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Complete your look with these trendy sunglasses. Featuring UV protection and a stylish design, they're a must-have accessory for sunny days.",
     image: {
@@ -79,6 +93,8 @@ const sampleListings = [
   {
     title: "Men's Casual Sneakers",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Add a sporty touch to your outfits with these comfortable casual sneakers. With a modern design and cushioned sole, they're perfect for everyday wear.",
     image: {
@@ -90,6 +106,8 @@ const sampleListings = [
   {
     title: "Women's Crossbody Bag",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Stay organized on the go with this versatile crossbody bag. Featuring multiple compartments and an adjustable strap, it's both stylish and functional.",
     image: {
@@ -101,6 +119,8 @@ const sampleListings = [
   {
     title: "Men's Dress Shoes",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Elevate your formal attire with these sleek dress shoes. Crafted from premium leather, they're perfect for weddings, parties, or business meetings.",
     image: {
@@ -112,6 +132,8 @@ const sampleListings = [
   {
     title: "Women's Denim Jacket",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Stay stylish and comfortable with this classic denim jacket. Featuring a timeless design and durable denim fabric, it's perfect for layering.",
     image: {
@@ -123,6 +145,8 @@ const sampleListings = [
   {
     title: "Men's Backpack",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Carry your essentials in style with this spacious backpack. With multiple compartments and padded straps, it's perfect for work, school, or travel.",
     image: {
@@ -134,6 +158,8 @@ const sampleListings = [
   {
     title: "Women's Workout Leggings",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Stay comfortable during workouts with these stretchy workout leggings. Featuring moisture-wicking fabric and a high waistband, they provide support and style.",
     image: {
@@ -145,6 +171,8 @@ const sampleListings = [
   {
     title: "Men's Hooded Sweatshirt",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Stay cozy and warm with this soft hooded sweatshirt. Made from fleece fabric with a kangaroo pocket, it's perfect for chilly days.",
     image: {
@@ -156,6 +184,8 @@ const sampleListings = [
   {
     title: "Women's Ankle Boots",
     category: "",
+    favourite: false,
+    cart: false,
     description:
       "Step out in style with these trendy ankle boots. Featuring a block heel and faux leather material, they're perfect for day-to-night looks.",
     image: {
@@ -167,6 +197,8 @@ const sampleListings = [
   {
     title: "Floral Print Maxi Dress",
     category: "Ladies",
+    favourite: false,
+    cart: false,
     description:
       "Embrace summer vibes with this stunning floral print maxi dress. Made from lightweight fabric, it's perfect for beach outings or brunch dates.",
     image: {
@@ -178,6 +210,8 @@ const sampleListings = [
   {
     title: "Embroidered Denim Jacket",
     category: "Ladies",
+    favourite: false,
+    cart: false,
     description:
       "Elevate your denim game with this embroidered denim jacket. Featuring intricate floral embroidery, it adds a stylish touch to any outfit.",
     image: {
@@ -189,6 +223,8 @@ const sampleListings = [
   {
     title: "Striped Linen Jumpsuit",
     category: "Ladies",
+    favourite: false,
+    cart: false,
     description:
       "Stay chic and comfortable in this striped linen jumpsuit. With a relaxed fit and adjustable waist tie, it's a versatile piece for any occasion.",
     image: {
@@ -200,6 +236,8 @@ const sampleListings = [
   {
     title: "Boho Crochet Blouse",
     category: "Ladies",
+    favourite: false,
+    cart: false,
     description:
       "Channel boho vibes with this crochet blouse. Pair it with denim shorts or jeans for a casual yet stylish look.",
     image: {
@@ -211,6 +249,8 @@ const sampleListings = [
   {
     title: "Ruffled Off-Shoulder Top",
     category: "Ladies",
+    favourite: false,
+    cart: false,
     description:
       "Make a statement with this ruffled off-shoulder top. Its playful design adds a touch of flair to your summer wardrobe.",
     image: {
@@ -222,6 +262,8 @@ const sampleListings = [
   {
     title: "Linen Button-Up Shirt",
     category: "Men",
+    favourite: false,
+    cart: false,
     description:
       "Stay cool and sophisticated in this linen button-up shirt. Perfect for summer days or casual Fridays at the office.",
     image: {
@@ -233,6 +275,8 @@ const sampleListings = [
   {
     title: "Printed Swim Trunks",
     category: "Men",
+    favourite: false,
+    cart: false,
     description:
       "Dive into summer with these vibrant printed swim trunks. Quick-drying fabric and a comfortable fit make them ideal for beach days.",
     image: {
@@ -244,6 +288,8 @@ const sampleListings = [
   {
     title: "Slim Fit Chino Pants",
     category: "Men",
+    favourite: false,
+    cart: false,
     description:
       "Update your wardrobe with these versatile slim fit chino pants. Dress them up with a blazer or keep it casual with a polo shirt.",
     image: {
@@ -255,6 +301,8 @@ const sampleListings = [
   {
     title: "Graphic Print T-Shirt",
     category: "Men",
+    favourite: false,
+    cart: false,
     description:
       "Add a pop of personality to your look with this graphic print t-shirt. Soft and breathable fabric ensures all-day comfort.",
     image: {
@@ -266,6 +314,8 @@ const sampleListings = [
   {
     title: "Casual Sneakers",
     category: "Men",
+    favourite: false,
+    cart: false,
     description:
       "Step out in style with these classic casual sneakers. Their timeless design makes them a wardrobe staple for any season.",
     image: {
@@ -277,6 +327,8 @@ const sampleListings = [
   {
     title: "Unicorn Print Dress",
     category: "Kid",
+    favourite: false,
+    cart: false,
     description:
       "Spark your little one's imagination with this adorable unicorn print dress. It's perfect for playdates or special occasions.",
     image: {
@@ -288,6 +340,8 @@ const sampleListings = [
   {
     title: "Dinosaur Graphic T-Shirt",
     category: "Kid",
+    favourite: false,
+    cart: false,
     description:
       "Let your kid's personality shine with this dinosaur graphic t-shirt. Soft fabric ensures comfort during playtime.",
     image: {
@@ -299,6 +353,8 @@ const sampleListings = [
   {
     title: "Denim Overalls",
     category: "Kid",
+    favourite: false,
+    cart: false,
     description:
       "Keep it cute and casual with these denim overalls for kids. Adjustable straps ensure a perfect fit as they grow.",
     image: {
@@ -310,6 +366,8 @@ const sampleListings = [
   {
     title: "Printed Leggings Set",
     category: "Kid",
+    favourite: false,
+    cart: false,
     description:
       "Update their activewear collection with this printed leggings set. Comfortable and stylish for everyday wear or sports activities.",
     image: {
@@ -321,6 +379,8 @@ const sampleListings = [
   {
     title: "Cartoon Character Backpack",
     category: "Kid",
+    favourite: false,
+    cart: false,
     description:
       "Make school days fun with this cartoon character backpack. Spacious compartments and adjustable straps make it practical and playful.",
     image: {
@@ -332,6 +392,8 @@ const sampleListings = [
   {
     title: "Velvet Throw Pillow Set",
     category: "Home",
+    favourite: false,
+    cart: false,
     description:
       "Add a touch of luxury to your living space with this velvet throw pillow set. Mix and match colors for a personalized look.",
     image: {
@@ -343,6 +405,8 @@ const sampleListings = [
   {
     title: "Ceramic Plant Pot",
     category: "Home",
+    favourite: false,
+    cart: false,
     description:
       "Elevate your indoor garden with this stylish ceramic plant pot. Its sleek design complements any plant arrangement.",
     image: {
@@ -354,6 +418,8 @@ const sampleListings = [
   {
     title: "Aromatherapy Diffuser",
     category: "Home",
+    favourite: false,
+    cart: false,
     description:
       "Create a relaxing atmosphere at home with this aromatherapy diffuser. Choose your favorite essential oils for a customized experience.",
     image: {
@@ -365,6 +431,8 @@ const sampleListings = [
   {
     title: "Moroccan Style Rug",
     category: "Home",
+    favourite: false,
+    cart: false,
     description:
       "Bring warmth and elegance to your floors with this Moroccan style rug. Its intricate patterns add a touch of global charm to your home.",
     image: {
@@ -376,6 +444,8 @@ const sampleListings = [
   {
     title: "Stainless Steel Cookware Set",
     category: "Home",
+    favourite: false,
+    cart: false,
     description:
       "Upgrade your kitchen with this durable stainless steel cookware set. Includes essential pots and pans for all your cooking needs.",
     image: {

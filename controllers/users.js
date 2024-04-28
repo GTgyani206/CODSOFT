@@ -1,3 +1,4 @@
+const Listing = require("../models/listing.js");
 module.exports.renderSignUpForm = (req, res) => {
   res.render("users/signup.ejs");
 };
@@ -47,4 +48,15 @@ module.exports.rendercustomerService = async (req, res) => {
 
 module.exports.rendernewsletter = async (req, res) => {
   res.render("users/newsletter.ejs");
+};
+// Favorite route
+module.exports.renderfavourite = async (req, res) => {
+  const favouriteListings = await Listing.find({ favourite: true });
+  res.render("users/favourite.ejs", { favouriteListings });
+};
+
+//cart route
+module.exports.rendercart = async (req, res) => {
+  const cartListing = await Listing.find({ cart: true });
+  res.render("users/cart.ejs", { cartListing });
 };

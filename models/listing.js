@@ -10,6 +10,14 @@ const listingSchema = new Schema({
   category: {
     type: String,
   },
+  favourite: {
+    type: Boolean,
+    default: false,
+  },
+  cart: {
+    type: Boolean,
+    default: false,
+  },
   description: String,
   image: {
     url: String,

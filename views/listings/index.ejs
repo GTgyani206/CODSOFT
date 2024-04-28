@@ -3,7 +3,8 @@
 
 <div class="index">
   <div><h2>Suggested for You</h2></div>
-  <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 content ml-3">
+  <br />
+  <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1 content ml-3">
     <% for(let listing of allListings) { %> <% if(listing.category == "") { %>
     <a class="listing-links" href="/listings/<%= listing._id %>">
       <div class="card col listing-card">
@@ -13,7 +14,11 @@
           alt="listing-image"
           style="height: 20rem"
         />
-        <div class="card-img-overlay"></div>
+        <div class="card-img-overlay">
+          <span class="card-img-overlay-heart" role="button">
+            <i class="bi bi-heart-fill"></i>
+          </span>
+        </div>
         <div class="card-body">
           <p class="card-text">
             <b> <%= listing.title %> </b>

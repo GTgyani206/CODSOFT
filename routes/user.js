@@ -33,4 +33,10 @@ router.get("/newsletter", userController.rendernewsletter);
 // Logout
 router.get("/logout", userController.logout);
 
+//favourite route
+router.get("/favourite", wrapAsync(userController.renderfavourite));
+
+//cart route
+router.get("/cart", wrapAsync(userController.rendercart));
+
 module.exports = router;
