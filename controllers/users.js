@@ -1,3 +1,4 @@
+const User = require('../models/user');
 const Listing = require("../models/listing.js");
 module.exports.renderSignUpForm = (req, res) => {
   res.render("users/signup.ejs");
@@ -5,20 +6,19 @@ module.exports.renderSignUpForm = (req, res) => {
 
 module.exports.signup = async (req, res) => {
   try {
-    let { username, email, password } = req.body;
-    const newUser = new User({ email, username });
-    const registeredUser = await User.register(newUser, password);
-    console.log(registeredUser);
+    const { username, email, password } = req.body;
+    const user = new User({ email, username });
+    const registeredUser = await User.register(user, password);
     req.login(registeredUser, (err) => {
       if (err) {
         return next(err);
       }
-      req.flash("success", "Welcome to Urban Trendz! ");
-      res.redirect("/listings");
+      req.flash('success', 'Welcome to Urban Trendz!');
+      res.redirect('/listings');
     });
   } catch (e) {
-    req.flash("error", e.message);
-    res.redirect("/signup");
+    req.flash('error', e.message);
+    res.redirect('/signup');
   }
 };
 
@@ -49,10 +49,12 @@ module.exports.rendercustomerService = async (req, res) => {
 module.exports.rendernewsletter = async (req, res) => {
   res.render("users/newsletter.ejs");
 };
+
 // Favorite route
-module.exports.renderfavourite = async (req, res) => {
-  const favouriteListings = await Listing.find({ favourite: true });
-  res.render("users/favourite.ejs", { favouriteListings });
+module.exports.getFavorites = async (req, res) => {
+  const userId = req.user._id;
+  const favorites = await Listing.find({ favorites: userId });
+  res.render('users/favorite', { favorites });
 };
 
 //cart route

@@ -3,27 +3,16 @@ const Schema = mongoose.Schema;
 const Review = require("./review.js");
 
 const listingSchema = new Schema({
-  title: {
-    type: String,
-    required: true,
-  },
-  category: {
-    type: String,
-  },
-  favourite: {
-    type: Boolean,
-    default: false,
-  },
-  cart: {
-    type: Boolean,
-    default: false,
-  },
+  title: { type: String, required: true },
+  category: { type: String },
+  favourite: { type: Boolean, default: false },
+  cart: { type: Boolean, default: false },
   description: String,
   image: {
     url: String,
     filename: String,
   },
-  price: Number,
+  price: Number, 
   reviews: [
     {
       type: Schema.Types.ObjectId,
@@ -34,6 +23,12 @@ const listingSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "User",
   },
+  favorites: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
+  ],
 });
 
 listingSchema.post("findOneAndDelete", async (listing) => {

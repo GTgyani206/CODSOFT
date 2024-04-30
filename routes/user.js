@@ -34,7 +34,9 @@ router.get("/newsletter", userController.rendernewsletter);
 router.get("/logout", userController.logout);
 
 //favourite route
-router.get("/favourite", wrapAsync(userController.renderfavourite));
+router.get('/favorites', userController.getFavorites);
+
+module.exports = router;
 
 //cart route
 router.get("/cart", wrapAsync(userController.rendercart));

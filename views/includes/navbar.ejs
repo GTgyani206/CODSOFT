@@ -12,12 +12,19 @@
         /></a>
       </div>
       <div class="nav-opt">
+        <% if(!currUser) {%>
         <a class="btn Sign-in" href="/login">
           <i class="fa-regular fa-user"></i> Sign in
         </a>
-        <a class="btn" href="/favourite">
+        <% } else { %>
+        <a class="btn Sign-in" href="/logout">
+          <i class="fa-regular fa-user"></i> Log Out
+        </a>
+        <a class="btn" href="/favorites">
           <i class="fa-regular fa-heart"></i> Favourites
         </a>
+        <% } %>
+
         <a class="btn" href="/cart"><i class="bi bi-bag-heart"></i> Cart</a>
       </div>
     </div>
