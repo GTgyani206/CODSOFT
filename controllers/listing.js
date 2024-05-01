@@ -35,3 +35,25 @@ module.exports.toggleFavorite = async (req, res) => {
   await listing.save();
   res.redirect(`/listings/${id}`);
 };
+
+
+//Cart toggler
+module.exports.toggleCart = async (req, res) => {
+  const { id } = req.params;
+  const listing = await Listing.findById(id);
+
+  // Check if the user is already in the cart
+  const index = listing.cart.indexOf(req.user._id);
+
+  if (index !== -1) {
+    // User is in the cart, remove them
+    listing.cart.splice(index, 1);
+  } else {
+    // User is not in the cart, add them
+    listing.cart.push(req.user._id);
+  }
+
+  await listing.save();
+  res.redirect(`/listings/${id}`);
+};
+

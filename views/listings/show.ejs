@@ -51,12 +51,15 @@
           </a>
         </span>
       <% } %>
-      <a
-        href="/listings/<%= listing._id %>/add2cart"
-        class="btn btn-warning offset-4"
-      >
-        Add to Cart</a
-      >
+      <% if (req.user && listing.cart.includes(req.user._id)) { %>
+        <form action="/listings/<%= listing._id %>/cart?_method=POST" method="POST">
+          <button class="btn btn-danger">Remove from Cart</button>
+        </form>
+        <% } else if (req.user) { %>
+        <form action="/listings/<%= listing._id %>/cart?_method=POST" method="POST">
+          <button class="btn btn-primary">Add to Cart</button>
+        </form>
+        <% } %>
     </div>
 
     <div class="mb-3 mt-3 mr-5"></div>

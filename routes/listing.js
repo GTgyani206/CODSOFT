@@ -9,4 +9,6 @@ router.get("/:id", wrapAsync(listingController.showListing)); // Show route
 
 router.post('/:id/favorite', listingController.toggleFavorite); //toggle favorite route
 
+router.post('/listings/:id/cart', listingController.toggleCart);//toggle cart route
+
 module.exports = router;

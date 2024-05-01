@@ -1,8 +1,8 @@
-<% layout("/layouts/boilerplate") -%>
+<% layout('/layouts/boilerplate') %>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h1>Cart Listings</h1>
+      <h1>Your Cart</h1>
       <table class="table table-striped">
         <thead>
           <tr>
@@ -14,30 +14,17 @@
           </tr>
         </thead>
         <tbody>
-          <% cartListing.forEach(function(listing) { %>
+          <% cartItems.forEach(function(listing) { %>
           <tr>
             <td><%= listing.title %></td>
             <td><%= listing.description %></td>
             <td><%= listing.price %></td>
             <td>
-              <img
-                src="<%= listing.image.url %>"
-                alt="Listing Image"
-                style="width: 100px; height: 100px"
-              />
+              <img src="<%= listing.image.url %>" alt="Listing Image" style="width: 100px; height: 100px" />
             </td>
             <td>
-              <a
-                href="/listings/<%= listing._id %>/cart"
-                class="btn btn-warning"
-                >Add to Cart</a
-              >
-              <form
-                action="/listings/<%= listing._id %>?_method=DELETE"
-                method="POST"
-                style="display: inline"
-              >
-                <button type="submit" class="btn btn-danger">Delete</button>
+              <form action="/listings/<%= listing._id %>/cart?_method=POST" method="POST" style="display: inline">
+                <button type="submit" class="btn btn-danger">Remove from Cart</button>
               </form>
             </td>
           </tr>

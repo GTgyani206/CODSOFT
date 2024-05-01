@@ -34,16 +34,6 @@ module.exports.validateReview = (req, res, next) => {
   }
 };
 
-// module.exports.isReviewAuthor = async (req, res, next) => {
-//   const { id } = req.params;
-//   const listing = await Listing.findById(id);
-//   if (!listing.author.equals(req.user._id)) {
-//     req.flash("error", "You do not have permission to do that.");
-//     return res.redirect(`/listings/${id}`);
-//   }
-//   next();
-// }
-
 module.exports.saveRedirectURL = (req, res, next) => {
   if (req.session.redirectURL) {
     res.locals.redirectURL = req.session.redirectURL;
