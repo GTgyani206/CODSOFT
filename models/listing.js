@@ -5,13 +5,8 @@ const Review = require("./review.js");
 const listingSchema = new Schema({
   title: { type: String, required: true },
   category: { type: String },
-  favorite: { type: Boolean, default: false },
-  cart: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: "User",
-    },
-  ],  
+  favourite: { type: Boolean, default: false },
+  cartItm: { type: Boolean, default: false },
   description: String,
   image: {
     url: String,

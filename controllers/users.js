@@ -59,6 +59,6 @@ module.exports.getFavorites = async (req, res) => {
 
 //cart route
 module.exports.rendercart = async (req, res) => {
-  const cartListing = await Listing.find({ cart: true });
+  const cartListing = await Listing.find({ cartItm: true });
   res.render("users/cart.ejs", { cartListing });
 };

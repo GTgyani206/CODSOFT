@@ -36,9 +36,7 @@ router.get("/logout", userController.logout);
 //favourite route
 router.get('/favorites', userController.getFavorites);
 
-module.exports = router;
-
 //cart route
-router.get("/cart", wrapAsync(userController.rendercart));
+router.get("/cart", userController.rendercart);
 
 module.exports = router;

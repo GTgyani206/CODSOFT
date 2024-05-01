@@ -51,13 +51,18 @@
           </a>
         </span>
       <% } %>
-      <% if (req.user && listing.cart.includes(req.user._id)) { %>
-        <form action="/listings/<%= listing._id %>/cart?_method=POST" method="POST">
-          <button class="btn btn-danger">Remove from Cart</button>
+
+      <% if (currUser.user && listing.cart.includes(curr.user._id)) { %>
+        <form action="/listings/<%= listing._id %>/cart?" method="POST" 
+          novalidate
+          class="needs-validation">
+          <button class="btn btn-danger" style="margin-left: 20%;">Remove from Cart</button>
         </form>
-        <% } else if (req.user) { %>
-        <form action="/listings/<%= listing._id %>/cart?_method=POST" method="POST">
-          <button class="btn btn-primary">Add to Cart</button>
+        <% } else { %>
+        <form action="/listings/<%= listing._id %>/cart?" method="POST" 
+          novalidate
+          class="needs-validation">
+          <button class="btn btn-warning" style="margin-left: 35rem;">Add to Cart</button>
         </form>
         <% } %>
     </div>

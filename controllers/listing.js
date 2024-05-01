@@ -20,40 +20,40 @@ module.exports.toggleFavorite = async (req, res) => {
   const listing = await Listing.findById(id);
 
   // Check if the user has already favorited the listing
-  const userFavorited = listing.favorites.includes(req.user._id);
+  const userFavorited = listing.favorites.includes(req.user.id);
 
   if (userFavorited) {
     // Remove the user from the favorites array
     listing.favorites = listing.favorites.filter(
-      (userId) => userId.toString() !== req.user._id.toString()
+      (userId) => userId.toString() !== req.user.id.toString()
     );
   } else {
     // Add the user to the favorites array
-    listing.favorites.push(req.user._id);
+    listing.favorites.push(req.user.id);
   }
 
   await listing.save();
   res.redirect(`/listings/${id}`);
 };
-
 
 //Cart toggler
 module.exports.toggleCart = async (req, res) => {
   const { id } = req.params;
   const listing = await Listing.findById(id);
 
-  // Check if the user is already in the cart
-  const index = listing.cart.indexOf(req.user._id);
+  //check if user have already added the item to cart
+  const userCart = listing.cart.includes(req.user.id);
 
-  if (index !== -1) {
-    // User is in the cart, remove them
-    listing.cart.splice(index, 1);
+  if (userCart) {
+    //remove the item from the cart
+    listing.cart = listing.cart.filter(
+      (userId) => userId.toString() !== req.user.id.toString()
+    );
   } else {
-    // User is not in the cart, add them
-    listing.cart.push(req.user._id);
+    //add the item to the cart
+    listing.cart.push(req.user.id);
   }
 
   await listing.save();
   res.redirect(`/listings/${id}`);
-};
-
+  };

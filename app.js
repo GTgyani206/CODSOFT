@@ -9,6 +9,7 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const ExpressError = require("./utils/ExpressError");
 const session = require("express-session");
+const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
@@ -19,14 +20,14 @@ const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 
-const Mongo_URL = "mongodb://127.0.0.1:27017/codsoft";
+//const Mongo_URL = "mongodb://127.0.0.1:27017/codsoft";
+const dbUrl = process.env.ATLASDB_URL
 
-main()
-  .then(() => console.log("MongoDB Connected..."))
-  .catch((err) => console.log(err));
+
+
 
 async function main() {
-  await mongoose.connect(Mongo_URL);
+  await mongoose.connect(dbUrl);
 }
 
 app.set("view engine", "ejs");
@@ -36,7 +37,21 @@ app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "public")));
 
+const store = MongoStore.create({
+  mongoUrl: dbUrl,
+  crypto: {
+    secret : "supersecret"
+  },
+  touchAfter: 24 * 3600,
+});
+
+store.on("error", function (e) {
+  console.log("Session Store Error", e);
+}
+);
+
 const sessionOptions = {
+  store: store,
   secret: "supersecret",
   resave: false,
   saveUninitialized: true,
@@ -47,9 +62,7 @@ const sessionOptions = {
   },
 };
 
-app.get("/", (req, res) => {
-  res.send("Hi, I am root");
-});
+
 
 app.use(session(sessionOptions));
 app.use(flash());
