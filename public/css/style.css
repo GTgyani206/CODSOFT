@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
 .logo {
   width: 100px;
   height: 100px;
+  /* margin-right: 12rem; */
 }
 div > img {
   width: 100%;

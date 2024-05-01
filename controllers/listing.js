@@ -1,4 +1,5 @@
 const Listing = require("../models/listing.js");
+const User = require("../models/user.js");
 
 // Index route
 module.exports.index = async (req, res) => {
@@ -19,16 +20,16 @@ module.exports.toggleFavorite = async (req, res) => {
   const listing = await Listing.findById(id);
 
   // Check if the user has already favorited the listing
-  const userFavorited = listing.favorites.includes(currUser._id);
+  const userFavorited = listing.favorites.includes(req.user._id);
 
   if (userFavorited) {
     // Remove the user from the favorites array
     listing.favorites = listing.favorites.filter(
-      (userId) => userId.toString() !== currUser._id.toString()
+      (userId) => userId.toString() !== req.user._id.toString()
     );
   } else {
     // Add the user to the favorites array
-    listing.favorites.push(currUser._id);
+    listing.favorites.push(req.user._id);
   }
 
   await listing.save();
